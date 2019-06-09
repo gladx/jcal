@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3a24460bd99b19c9e3ebf99c323f785d",
+    "packages": [
+        {
+            "name": "m-jch/date",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/m-jch/Date.git",
+                "reference": "7dc2d40c064988cd3d194475c05ed88a9df0721a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/m-jch/Date/zipball/7dc2d40c064988cd3d194475c05ed88a9df0721a",
+                "reference": "7dc2d40c064988cd3d194475c05ed88a9df0721a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mohsen shafiei",
+                    "email": "mohsen.jch@gmail.com"
+                }
+            ],
+            "description": "Fix all needs to date in php",
+            "time": "2017-12-04T08:55:24+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
