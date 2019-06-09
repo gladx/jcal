@@ -4,14 +4,14 @@ namespace App;
 class Telegram
 {
 	private $api_url = '';
-    private $chat_id = '';
-    
+	private $chat_id = '';
+
 	public function __construct($token, $chat_id)
 	{
 		$this->api_url = 'https://api.telegram.org/bot' . $token;
 		$this->chat_id = $chat_id;
 	}
-    
+
 	public function send($message)
 	{
 		$text = trim($message);
