@@ -11,5 +11,11 @@ $chat_id = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
 $bot = new Telegram(BOT_TOKEN, $chat_id);
-$bot->send(Jcal::getDefault());
-// echo Jcal::getDefault() ;
+
+if($message == '/jcal_3') {
+    $bot->send(Jcal::get3());
+} else if($message == '/dev'){
+    $bot->send(file_get_contents('readme.md'));
+} else {
+    $bot->send(Jcal::getDefault());
+}
