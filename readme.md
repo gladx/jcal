@@ -1,7 +1,7 @@
 # About
 Source : https://github.com/gladx/jcal
 
-Telegram bot : t.me/jcal2bot
+Telegram bot : https://t.me/jcal2bot
 
 # Help
 /jcal Display current month  
