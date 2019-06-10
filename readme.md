@@ -1,8 +1,13 @@
-t.me/jcal2bot
+# About
+Source : https://github.com/gladx/jcal
 
-/jcal Display current month
-/jcal_3 Display current month
+Telegram bot : t.me/jcal2bot
 
+# Help
+/jcal Display current month  
+/jcal-3 Display current month
+
+# Thanks
 Inspired by jcal Written by Ashkan Ghassemi. <ghassemi@ftml.net>
 
 http://savannah.nongnu.org/projects/jcal/
