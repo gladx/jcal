@@ -15,7 +15,7 @@ $bot = new Telegram(BOT_TOKEN, $chat_id);
 if($message == '/jcal_3') {
     $bot->send(Jcal::get3());
 } else if($message == '/dev'){
-    $bot->send(file_get_contents('readme.md'));
+    $bot->send(file_get_contents(__DIR__ .'/../readme.md'));
 } else {
     $bot->send(Jcal::getDefault());
 }
