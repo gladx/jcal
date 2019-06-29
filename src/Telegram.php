@@ -17,9 +17,19 @@ class Telegram
 		$text = trim($message);
 		if (strlen(trim($text)) > 0) {
 			$send = $this->api_url . "/sendmessage?parse_mode=Markdown&chat_id=" . $this->chat_id . "&text=" . urlencode($text);
-			file_get_contents($send);
+			execute($send);
 			return true;
 		}
 		return false;
 	}
+
+	private function execute($url){
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_URL,$url);
+        $response=curl_exec($ch);
+        curl_close($ch);
+        return $response;
+    }
 }
