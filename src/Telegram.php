@@ -17,7 +17,7 @@ class Telegram
 		$text = trim($message);
 		if (strlen(trim($text)) > 0) {
 			$send = $this->api_url . "/sendmessage?parse_mode=Markdown&chat_id=" . $this->chat_id . "&text=" . urlencode($text);
-			execute($send);
+			$this->execute($send);
 			return true;
 		}
 		return false;
