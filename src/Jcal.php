@@ -9,7 +9,7 @@ class Jcal
     {
         $today = new Jalali(null, 'Asia/Tehran');
         $startOfMonth = (new Jalali(null, 'Asia/Tehran'))->startOfMonth();
-        $endOfMonth = (new Jalali(null, 'Asia/Tehran'))->endOfMonth();
+        $endOfMonth = (new Jalali(null, 'Asia/Tehran'))->addMonths()->startOfMonth()->subDays();
         $str = 'l ' . $today->format('y l d F') . " l\n";
         $str .= ' Sh  Ye   Do  Se  Ch  Pa  Jo' . "\n";
         $startFirstDayinWeek = $startOfMonth->format('N');
@@ -50,7 +50,7 @@ class Jcal
     public static function getOneMonth($date)
     {
         $startOfMonth = (clone $date)->startOfMonth();
-        $endOfMonth = (clone $date)->endOfMonth();
+        $endOfMonth = (clone $date)->addMonths()->startOfMonth()->subDays();
         $str = 'l ' . $startOfMonth->format('y F') . " l\n";
         $str .= 'Sh  Ye   Do  Se  Ch  Pa  Jo' . "\n";
         $startFirstDayinWeek = $startOfMonth->format('N');
